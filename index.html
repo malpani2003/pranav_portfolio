@@ -1,520 +1,437 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        .body {
-            /* background-color: rgb(248, 169, 182); */
-            /* background-color:rgb(56, 54, 54); */
-
-            background-image: linear-gradient(to right,black , rgb(67, 67, 68));
-            background-repeat: no-repeat;
-            background-size: cover;
-            /* font-family: 'Baloo Bhaijaan 2', cursive; */
-            /* font-family: 'Spline Sans Mono', monospace; */
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
+        body{
+            margin:0%;
+            padding: 0%;
         }
         nav{
-            position:sticky;
-        z-index: 1000;
-            top:0;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        .project {
+            border-bottom: 2px solid black;
             background-color: white;
-            padding: 1rem;
-            border-radius: 10px;
-            /* border: 3px solid darkblue; */
-            box-shadow: 1px 1px 10px white;
-            /* text-align: center; */
         }
-
-        .main_heading,
-        h1 {
-            text-align: center;
-            margin-bottom: 5rem;
-            /* font-family: 'Baloo Bhaijaan 2', cursive;
-            font-family: 'Rowdies', cursive; */
-            font-family: 'Spline Sans Mono', monospace;
-            font-weight: bolder;
+        .baneer{
+            background-image: url(https://media.tenor.com/0QkMr2Qerv8AAAAM/lol.gif);
+            min-height: 89vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-color: blueviolet; */
             color: white;
-        }
+            padding: 50px;
+            /* padding-bottom: 0px; */
 
-        .project h1 {
-            
-font-weight:bolder;
-          
         }
-        .project h4{
-            font-weight: 550;
+        .baneer .row img{
+            width:60%;
+            border-radius: 100%;
+            border: 2px solid rgb(255, 255, 255);
         }
-
-        .footer {
-            text-align: center;
-            font-size: 1.4rem;
-            /* font-family: 'Baloo Bhaijaan 2', cursive;
-            font-family: 'Rowdies', cursive; */
-            /* font-family: 'Spline Sans Mono', monospace; */
+        .navbar-brand{
+            background-color: black;
+            padding: 5px 20px;
+            color: white;
+            border-radius: 20px;
+        }
+       
+        .nav-item{
             font-weight: bold;
-            font-size: medium;
-            color: white;
-        }
-
-        .main_heading h1 {
-            font-size: 4rem;
-
-        }
-
-        .main_heading button {
-            margin: 0% auto;
-
-        }
-
-        .main_heading .btn a,
-        .main_heading .btn a:hover {
-            color: black;
-        }
-
-        .btn a,
-        .btn a:hover {
-            color: rgb(247, 247, 247);
+            transition: 2s ease-in;
             text-decoration: none;
+            
+        }
+        .nav-item:hover{
+            /* text-decoration: underline; */
+            text-decoration-line: underline;
+            text-decoration-color: blue;
+            color: blue;
+        }
+        /* .row button{
+            margin: auto;
+            width: 20%;
+            margin-left: 50px;
+            margin-top: 20px;
+        } */
+        .skills{
+            color: white;
+            background-color: blueviolet;
+            padding: 25px;
             font-weight: bold;
         }
-
-        .project img {
-            width: 15rem;
-            margin-bottom: 1rem;
-            border-radius: 10px;
-            margin-top: 1rem;
+        .skills .row{
+            background-color: rgb(203, 156, 246);
+    
+            padding: 20px;
+            border-radius: 20px;
+            width: 95%;
+            margin: auto;
         }
+        .skills .btn{
+            width: 29%;
+            display:inline;
+            margin: auto;
+            margin-left: 20px;
+          
+            margin-top: 20px;
+        }
+        .skills .btn:hover{
+            background-color: black;
+              
+        }
+        .skills .btn img{
+            width:30%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 60px;
+        }
+        .education .row div{
+            background-color: aliceblue;
+            border: 0.3px solid black;
+            width: 80%;
+            margin: auto;
+            /* box-shadow: 2px 2px 2px rgb(10, 10, 10); */
+            margin-top: 20px;
+        }
+        .education .row div:hover{
+            filter: drop-shadow(1px 1px 4px black);
 
-        .skill img {
-            width: 22rem;
+        }
+        .education h3{
+            font-weight: bolder;
+            color: navy;
+        }
+        .projects{
+            color: white;
+            background-color: blueviolet;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .projects .card {
+            /* width: 60%; */
+            margin: auto;
+            color: black;
+            margin-top: 20px;
+        }
+        .projects .card-body h3 {
+            margin-top:10px;
+            color: black;
             text-align: center;
         }
+        .projects .card .card-body img{
+            width:90%;
+            height: 250px;
+            margin: auto;
+            transition:1s ease;
+            /* padding: 0%; */
 
-        .main_heading img {
-            width: 8rem;
+        }
+        
+        .contact{
+            background-color: rgb(228, 208, 247);
+            padding: 10px;
+            padding-bottom: 50px;
+        }
+        .contact .row{
+            background-color: rgb(255, 255, 255);
+            width:80%;
+            margin: auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 20px;
+            filter: drop-shadow(1px 1px 4px black);
+        }
+        .contact img{
+            width:100%;
+            display: block;
+            justify-content: center;
+            margin: auto;
+
+
+        }
+       
+        @media(max-width:900px) {
+            .projects .card{
+            width: 80%;
+ 
+            }
+            .contact img{
+            width:40%;
+            display: block;
+            justify-content: center;
+            margin: auto;
+
+
+        }
+        .baneer .row img{
+            width:70%;
             border-radius: 100%;
             border: 2px solid black;
         }
-
-        .nav-link {
-            color: navy;
-            font-weight: bold;
-            margin-left: 3rem;
+       
+            
         }
-
-        /* #menu {
-            margin: 0% auto;
-        } */
-
-        .nav-link:hover {
-            background-color: navy;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
+        @media(max-width:767px) {
+            .baneer{
+            text-align: center;
         }
-
-        input[type="text"],
-        input[type="email"] {
-
-            border: 1.5px solid black;
+        .baneer .box img{
+            width: 40%;
+            margin: auto;
+            display: block;
         }
-        .arrow{
-            display: none;
         }
-        .skill li{
-               /* width: 7rem; */
-               /* text-align: center; */
-               font-weight: bold;
-        }
-
         
+        footer {
+            /* background-color: honeydew; */
+            padding: 20px;
+            padding-bottom: 0px;
+            border-top: 2px solid black;
+          
+          
+
+        }
+
+        footer h4 {
+            color: black;
+            margin-top: 10px;
+           
+            text-align: center;
+        }
+        .info span{
+            font-weight: bold;
+            color:blueviolet
+        }
+        /* .baneer .social_icons a{
+            background-color: white;
+            padding: 10px;
+            border-radius: 100%;
+        } */
+        .baneer .social_icons {
+          
+
+            margin-bottom: 30px;
+        }
+        .baneer .social_icons img{
+             width: 10%;
+             /* filter: opacity(0.3); */
+             border: none;
+        }
+        .baneer h1{
+            font-size:4rem;
+        }
+        .baneer h2{
+            font-size: 3rem;
+        }
+        li:before {
+  content: "\f00c"; 
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+.projects .card-body :hover{
+    
+
+}
+       
     </style>
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-
-<body class="body">
-
-    <nav class="navbar sticky-top bg-white navbar-expand-sm ">
-        <h1 class="navbar-brand bg-danger p-2 rounded text-white">Portfolio</h1>
-        <button class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+<body>
+    <nav class="navbar  navbar-expand-lg navbar-light sticky-top">
+      
+        <a class="navbar-brand mx-3" href="index2.html" style="font-size:1.5rem; font-weight: bold; color: rgb(255, 255, 255);"> Portfolio - Pranav Malpani</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="navbar-nav collapse navbar-collapse" id="menu">
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#home">Home</a>
+                <a class="nav-item nav-link active" href="#about">About Me</a>
+                <a class="nav-item nav-link active" href="#education">Education</a>
+                <a class="nav-item nav-link active" href="#skill">Skills</a>
+                <a class="nav-item nav-link active" href="#project">Project</a>
+                <a class="nav-item nav-link active" href="#contact">Contact Us</a>
 
-            <li class="nav-item"><a href="#skill" class="nav-link">Skills</a></li>
-
-            <li class="nav-item"><a href="#course" class="nav-link">Course</a></li>
-            <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-
+            </div>
+        </div>
     </nav>
-
-    <div class="container my-5">
-        <div class="main_heading" id="about">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="pranavphoto.jpg" alt="">
-                </div>
-                <div class="col-md-7 offset-md-1">
-
-                    <h1>Pranav Malpani</h1>
-                    <h3>Web Developer</h3>
-                </div>
-            </div>
-            <p style="margin-top:10px; font-size: larger;">A Electronics and Communication Engineering student with an
-                immense interest in
-                Software & Web
-                Development with good problem-solving skills. Looking forward to Industry Experience and Contribute to
-                realworld projects.</p>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <p> Age : 19</p>
-                    <p> Qualification : B.Tech</p>
-
-
-
-                </div>
-                <div class="col-md-3 offset-md-2">
-                    <p> Post : Web Developer</p>
-
-
-                    <p> Language : English / Hindi</p>
-                </div>
-                <div class="col-md-3 offset-md-1">
-                    <p>Date of birth: 26 August 2003</p>
-
-                    <p>Country: India</p>
-                </div>
-            </div>
-            <div class="row my-3">
-                <button class="btn btn-warning"><a href="">
-                        Download CV</a></button>
-                <button class="btn btn-warning"><a href="https://github.com/malpani2003">Github</a></button>
-                <button class="btn btn-warning"><a href="https://www.linkedin.com/in/pranav-malpani-868389239/">
-                        Linkedin</a></button>
-            </div>
-
-
-        </div>
-
-        <div class="project">
-            <h1>Skills</h1>
-            <div class="row my-3 skill" id="skill">
-<!-- 
-                <div class="col-md-3">
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.Ax3mc9JLu0i_d019ig20YQHaFI&pid=Api&P=0" alt="">
-                    <h4>HTML / CSS</h4>
-                   
-
-                </div>
-                <div class="col-md-3 offset-md-2 my-3">
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.Ax3mc9JLu0i_d019ig20YQHaFI&pid=Api&P=0" alt="">
-                    <h4>HTML / CSS</h4>
-                </div>
-                <div class="col-md-3 offset-md-1">
-                    <img src="https://tse3.mm.bing.net/th?id=OIP.Ax3mc9JLu0i_d019ig20YQHaFI&pid=Api&P=0" alt="">
-                    <h4>HTML / CSS</h4>
-                </div> -->
-
-
-
-                <div class="col-md-5">
-                    <li>
-                        HTML / CSS
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">80%</div>
-                        </div>
-
-                    </li>
-                    <li>BootStrap
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">80%</div>
-                        </div>
-                    </li>
-                    <li>PHP & MYSQL
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">50%</div>
-                        </div>
-                    </li>
-                    <li>Web Development
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">40%</div>
-                        </div>
-                    </li>
-                    </div>
-                    <div class="col-md-5 offset-md-2">
-                    <li>C / C++
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </li>
-                    <li>
-                        Javscript
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </li>
-                    <li>
-                        JQuery
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </li>
-                    <li>
-                        Visual Studio Code
-                        <div class="progress my-3">
-                            <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">70%</div>
-                        </div>
-                    </li>
-                </div>
-
-
-            </div>
-        </div>
-
-
-        <div class="project my-5" id="course">
-            <h1>Course and Certification</h1>
-            <div class="row">
-                <div class="col-md-3">
-                    <h4>Essential Program in HTML & CSS Zero to Hero</h4>
-                    <p>By-: LetsUpgrade, Online</p>
-                    <p>Date-: March 2022</p>
-                    <button class="btn btn-primary"><a target="_blank"
-                            href="https://drive.google.com/file/d/1obkmOUtAmtt1__qtLmqHxCSSDFNLwLEj/view?usp=drivesdk">
-                            See Certificate</a></button>
-
-                </div>
-                <div class="col-md-3 offset-md-2 my-3">
-                    <h4>ISTE SC MANIT Codathon</h4>
-                    <p>By-: ISTE SC MANIT</p>
-                    <p>Date-: March 2022</p>
-                    <button class="btn btn-primary"><a target="_blank"
-                            href="https://drive.google.com/file/d/1aMZR5UpY_4DUi_-sVJXF9XL-Y6yPtr33/view?usp=sharing">
-                            See Certificate</a></button>
-                </div>
-                <div class="col-md-3 offset-md-1">
-                    <h4>Website/Application Development</h4>
-                    <p>By-: Unstop Ingniter's Club - NIT Mizoram </p>
-                    <p>Date-: Aug 2022 </p>
-                    <button class="btn btn-primary"><a target="_blank"
-                            href="https://drive.google.com/file/d/1-43LRgWBbCz5Lo73qcgrIXla_v6IATcT/view?usp=sharing">
-                            See Certificate</a></button>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="project my-5">
-            <h1>Intership & Experience</h1>
-            <div class="row my-3 skill">
-                <div class="col-md-3">
-                   <h4>Company-1</h4>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores non esse beatae quo velit quod amet cum ratione totam?</p>
-
-                </div>
-                <div class="col-md-3 offset-md-2">
-                    <h4>Company-2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores non esse beatae quo velit quod amet cum ratione totam?</p>
- 
-                </div>
-                <div class="col-md-3 offset-md-1">
-                    <h4>Company-3</h4>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores non esse beatae quo velit quod amet cum ratione totam?</p>
-
-                </div>
-               
-            </div>
-        </div>
-
-         -->
-        <div class="project my-5" id="education">
-            <h1>Education</h1>
-            <div class="row">
-                <div class="col-md-3">
-                    <h4><span class="arrow">&#8594;</span>Secondary (X)</h4>
-                    <p>Lakshmipat Singhania School</p>
-                    <p>CBSE board</p>
-                    <p>Year of completion: 2018</p>
-
-
-                </div>
-                <div class="col-md-3 offset-md-2">
-                    <h4> <span class="arrow">&#8594;</span>Secondary (XII)</h4>
-                    <p>Lakshmipat Singhania School</p>
-                    <p>CBSE board</p>
-                    <p>Year of completion: 2020</p>
-
-                </div>
-                <div class="col-md-3 offset-md-1">
-                    <h4><span class="arrow">&#8594;</span> B.Tech, Electronics and Communication</h4>
-                    <p>Indian Institute of Information Technology ,Kota</p>
-                    <p>2021-2025</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="project my-5" id="project">
-            <h1>Projects</h1>
-            <div class="row">
-                <div class="col-md-5 offset-md-1">
-                    <img src="coffee-removebg-preview.png" alt="">
-                    <h4>Coffee Shop Webpage</h4>
-                    <p>Language Used -: HTML ,CSS</p>
-                    <p>Status -: Not Completed</p>
-                    <button class="btn btn-primary"><a href="https://malpani2003.github.io/coffeeshopweb/"
-                            target="_blank">
-                            Click</a></button>
-
-
-
-                </div>
-                <div class="col-md-5 offset-md-1">
-                    <img src="health2-removebg-preview.png" alt="">
-                    <h4>Healthy Human Webpage</h4>
-                    <p>Language Used -: HTML ,CSS ,BOOTSTRAP ,PHP, MYSQL</p>
-                    <p>Status -: Not Completed</p>
-                    <button class="btn btn-primary"><a href="https://github.com/malpani2003/healthyhuman"
-                            target="_blank">
-                            Click</a></button>
-                    <button class="btn btn-dark"><a href="https://www.youtube.com/watch?v=DAB9sbp2Xnw"
-                            target="_blank">
-                            Video Link</a></button>
-
-                </div>
-
-                <div class="col-md-5 offset-md-1 ">
-                    <img src="health-removebg-preview.png" alt="">
-                    <h4>Moti Mahal Restrauant</h4>
-                    <p>Language Used -: HTML , CSS , BOOTSTRAP</p>
-                    <p>Status -: Not Completed</p>
-                    <button class="btn btn-primary"><a href="https://malpani2003.github.io/motimahal/" target="_blank">
-                            Click</a></button>
-                </div>
+<div class="baneer container-fluid">
+    <div class="box row">
+        <div class="col-md-5 offset-md-1">
+            <h1>Hello,</h1>
+            <h2>I'm Pranav Malpani</h2>
+            <h3>Web Developer</h3>
+            <a href="#about" class="btn btn-dark">About Me</a>
             <br><br>
-                <div class="col-md-5 offset-md-1 ">
-                    <img src="Screenshot (37).png" alt="">
-                    <h4>Javscript Mini Project</h4>
-                    <p>Language Used -: HTML , CSS , JavaScript</p>
-                    <p>Example -: Video Player , Twitter Post Word Limit , Digital Clock , Random Quote Generator </p>
-                    <button class="btn btn-primary"><a href="https://github.com/malpani2003/Javascript_projects"
-                            target="_blank">
-                            Click</a></button>
+            <div class="social_icons">
+
+                <a href="https://github.com/malpani2003"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt=""></a>
+                <!-- <a href="https://github.com/malpani2003"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBOh2ZMZ7BRzSZBIOk9K2dXDV9gZ3PeMZUh8vico&s" alt=""></a> -->
+            </div>
+
+
+        </div>
+        <div class="col-md-5 offset-md-1">
+            <img src="pranavphoto.jpg" alt="">
+        </div>
+    </div>
+</div>    
+<div class="info container my-5" id="about">
+    <h1>I'm Pranav Malpani</h1>
+    <p>A Electronics and Communication Engineering student with an immense interest in Software & Web
+        Development with good problem-solving skills. Looking forward to Industry Experience and Contribute to
+        realworld projects.</p>
+        <p><span>Age :</span> 18</p>
+        <p><span>Date of birth :</span> 26/08/2003</p>
+        <p><span>Phone No :</span> 9636326284</p>
+
+
+       
+      
+         <a href="" class="btn btn-dark">Download CV</a>
+       
+</div>
+
+<div class="skills" id="skill">
+    <h1 class="text-center">Skills and Knowledege</h1>
+    <p class="text-center">Every skill you acquire doubles your odds of success.
+    </p>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-dark"><img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt=""><br>HTML</button>
+            <button class="btn btn-dark"><img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt=""><br>CSS</button>
+            <button class="btn btn-dark"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt=""><br> BootStrap</button>
+            <button class="btn btn-dark"><img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt=""><br>JavaScript</button>
+            <button class="btn btn-dark"><img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt=""><br>Node Js</button>
+        <button class="btn btn-dark"><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld" alt=""><br>MongoDB</button>
+            <button class="btn btn-dark"><img src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" alt=""><br>Express</button>
+            <button class="btn btn-dark"><img src="https://www.pngitem.com/pimgs/m/355-3559358_c-and-c-logo-hd-png-download.png" alt=""><br>C/C++</button>
+        </div>
+       
+    
+       
+    </div>
+</div>
+
+<div class="education" id="education">
+    <h1 class="text-center my-3">My Education</h1>
+    <p class="text-center">Education Is Not The Learning Of Facts, But The Training Of The Mind To Think.</p>
+    <div class="row">
+        <div>
+            <h3>Class 10 (CBSE)</h3>
+            <h4>Lakshmipat Singhania School , Rajsamand</h4>
+            <h6>2018 | Completed</h6>
+           </div>
+       
+        <div>
+            <h3>Class 12 (CBSE)</h3>
+            <h4>Lakshmipat Singhania School , Rajsamand</h4>
+            <h6>2020 | Completed</h6>
+           </div>
+       <div>
+        <h3>Bachelor Of Engineering In Electronics and Communication Engineering</h3>
+        <h5>Indian Institute of Information Technology , Kota </h4>
+        <h6>2021-2025 | Pursuing</h6>
+       </div>
+       
+    </div>
+</div>
+
+<div class="projects" id="project">
+    <h1 class="text-center my-2">Projects</h1>
+    <div class="row">
+   
+    <div class="card col-md-5">
+        <div class="card-body">
+            <img src="img1.png" alt="">
+            
+           <h6 ><a href="" class="btn btn-outline-dark my-3 fw-bolder">Coding Blog</a> </h6>
+           <p>Language Used -: HTML / CSS , JavaScript, Node Js ,MongoDB<br> <br> It is a Platform or Blog website where students can share their coding Knowledege to other  </p>
+            <!-- <button class="btn btn-dark">View Code</button>
+            <button class="btn btn-dark">View Code</button> -->
+        </div>
+       
+    </div>
+    <div class="card col-md-5">
+        <div class="card-body">
+            <img src="img2.png" alt="">
+            
+           <h6 ><a href="https://github.com/malpani2003/Javascript_projects" class="btn btn-outline-dark my-3 fw-bolder">Javscript Mini Project</a> </h6>
+           <p>Language Used -: HTML , CSS , JavaScript <br> <br> Example -: Video Player , Twitter Post Word Limit , Digital Clock , Random Quote Generator</p>
+            <!-- <button class="btn btn-dark">View Code</button>
+            <button class="btn btn-dark">View Code</button> -->
+        </div>
+       
+    </div>
+    <!-- <div class="card col-md-5">
+        <div class="card-body">
+            <img src="img1.png" alt="">
+            
+           <h6 ><a href="" class="btn btn-outline-dark my-3 fw-bolder">Coding Blog</a> </h6>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos minus necessitatibus inventore atque earum culpa eius perferendis sapiente excepturi reiciendis?</p>
+            <!-- <button class="btn btn-dark">View Code</button>
+            <button class="btn btn-dark">View Code</button> -->
+        </div>
+       
+    </div> -->
+    
+</div>
+</div>
+
+<div class="contact" id="contact">
+    <h1 class="text-center my-4">Get In Touch</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="https://img.freepik.com/free-vector/contact-concept-landing-page_52683-21299.jpg?w=740&t=st=1669035721~exp=1669036321~hmac=e9d641651e855562173829c232811a50c3bd5decb5f1448d43e69ca773a2d759" alt="">
+        </div>
+        <div class="col-lg-6 offset-lg-1">
+            <form action="message.php" method="get">
+                <h4>Contact Form</h4>
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
                 </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" class="form-control" id="message" cols="30" rows="3" placeholder="Message"></textarea>
+                </div>
+                <input type="submit" value="Send" class="btn btn-dark my-3">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <footer>
+        
+        <div class="row my-2">
+            <div class="col-md-4">
+                <h3>Portfolio</h3>
+                <p>Thank you for visiting my personal portfolio website. Connect with me over socials.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Quick Links</h3>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </div>
+            <div class="col-md-4">
+                <h3>Contact Us</h3>
+                <li>Phone No -: 9636326284</li>
+                <li>Email Id - : pranavmaheshwari123@gmail.com</li>
+                
             </div>
         </div>
-
-        <div class="project my-5" id="contact">
-            <h1>Contact Me</h1>
-            <div class="row my-4">
-                <div class="col-md-5 offset-md-1">
-                    <p class="text-center">Whether you want to have technical work/conversation or want to have a
-                        cappuccino <br>
-                        Get in touch with me.</p>
-                    <p>Email id -: pranavmaheshwari123@gmail.com</p>
-                    <p>Phone no. -: 9636326284</p>
-
-                </div>
-                <div class="col-md-5 offset-md-1">
-                    <form action="">
-                        <div class="form-group">
-                            <label for="nam e" class="form-label">Name :</label>
-                            <input type="text" name="name" id="name" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email :</label>
-                            <input type="email" name="email" id="email" class="form-control">
-                        </div>
-                        <input type="submit" value="Contact" class="btn btn-primary">
-                    </form>
-
-                </div>
-
-
-            </div>
-        </div>
-        <!-- 
-
-        <div class="project my-5">
-            <h1>Contact Form</h1>
-            <div class="row">
-                <div class="col-md-4 mx-4">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt nesciunt quo iste facere
-                        porro? Ullam omnis tenetur dicta consequuntur, reprehenderit cum veritatis deserunt pariatur
-                        nobis, non numquam odio voluptatum libero.</p>
-                    <ul>
-                        <li><i class="material-icons">place</i> MNIT Campus, Jaipur, 302017</li>
-                        <br>
-
-                        <li><i class="material-icons">email</i> 2021kuec2012@iiitkota.ac.in</li>
-                        <br>
-                        <li><i class="fa fa-phone"></i>&nbsp; 96363xxxxx</li>
-                    </ul>
-
-
-                </div>
-                <div class="col-md-5 offset-md-2">
-                    <form action="message.php" method="get">
-
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea name="message" class="form-control" id="message" cols="30" rows="3"
-                                placeholder="Message"></textarea>
-                        </div>
-                        <input type="submit" value="Send" class="btn btn-primary">
-
-                </div>
-
-
-            </div>
-        </div> -->
-
-
-    </div>
-
-    <div class="container-fluid footer">
-        <p>Portfolio is created by Pranav Malpani</p>
-        <p>Copyright &copy; 2022</p>
-    </div>
-
-
-
+        <h4>Copyright (c) 2022. All rights reserved. <a href="index.html" target="_blank">Pranav Malpani</a></h4>
+    </footer>
+</div>
 </body>
-
 </html>
