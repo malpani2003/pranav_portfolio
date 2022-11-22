@@ -10,6 +10,9 @@
         body{
             margin:0%;
             padding: 0%;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Spline Sans Mono', monospace;
         }
         nav{
             border-bottom: 2px solid black;
@@ -72,7 +75,7 @@
         }
         .skills .btn{
             width: 29%;
-            display:inline;
+            /* display:inline; */
             margin: auto;
             margin-left: 20px;
           
@@ -83,15 +86,17 @@
               
         }
         .skills .btn img{
-            width:30%;
+            width:20%;
             margin-top: 10px;
             margin-bottom: 10px;
             height: 60px;
+           
         }
         .education .row div{
             background-color: aliceblue;
             border: 0.3px solid black;
             width: 80%;
+            padding: 10px;
             margin: auto;
             /* box-shadow: 2px 2px 2px rgb(10, 10, 10); */
             margin-top: 20px;
@@ -122,7 +127,7 @@
             text-align: center;
         }
         .projects .card .card-body img{
-            width:90%;
+            width:100%;
             height: 250px;
             margin: auto;
             transition:1s ease;
@@ -152,7 +157,16 @@
 
 
         }
-       
+        @media(max-width:690px) {
+            .skills .btn{
+                width: 45%;
+            }
+        }
+        @media(max-width:600px) {
+            .skills .btn{
+                width: 90%;
+            }
+        }
         @media(max-width:900px) {
             .projects .card{
             width: 80%;
@@ -233,9 +247,8 @@
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em; /* same as padding-left set on li */
 }
-.projects .card-body :hover{
-    
-
+textarea{
+    resize: none;
 }
        
     </style>
@@ -250,7 +263,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#home">Home</a>
+                <a class="nav-item nav-link active" href="#">Home</a>
                 <a class="nav-item nav-link active" href="#about">About Me</a>
                 <a class="nav-item nav-link active" href="#education">Education</a>
                 <a class="nav-item nav-link active" href="#skill">Skills</a>
@@ -348,7 +361,7 @@
    
     <div class="card col-md-5">
         <div class="card-body">
-            <img src="img1.png" alt="">
+            <img src="img1.png" alt="Cod">
             
            <h6 ><a href="" class="btn btn-outline-dark my-3 fw-bolder">Coding Blog</a> </h6>
            <p>Language Used -: HTML / CSS , JavaScript, Node Js ,MongoDB<br> <br> It is a Platform or Blog website where students can share their coding Knowledege to other  </p>
@@ -368,17 +381,18 @@
         </div>
        
     </div>
-    <!-- <div class="card col-md-5">
+    <div class="card col-md-5">
         <div class="card-body">
-            <img src="img1.png" alt="">
+            <img src="img3.png" alt="">
             
-           <h6 ><a href="" class="btn btn-outline-dark my-3 fw-bolder">Coding Blog</a> </h6>
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos minus necessitatibus inventore atque earum culpa eius perferendis sapiente excepturi reiciendis?</p>
+           <h6 ><a href="https://github.com/malpani2003/Movie-FInder" class="btn btn-outline-dark my-3 fw-bolder">Movie Finder</a> </h6>
+          
+           <p>Language Used -: HTML / CSS , BootStrap , Node Js <br> <br> Created Using Omdbapi API </p>
             <!-- <button class="btn btn-dark">View Code</button>
             <button class="btn btn-dark">View Code</button> -->
         </div>
        
-    </div> -->
+    </div>
     
 </div>
 </div>
